@@ -1,0 +1,29 @@
+opencollection: 1.0.0
+
+info:
+  name: bruno-lab122-gorkow
+config:
+  proxy:
+    inherit: true
+    config:
+      protocol: http
+      hostname: ""
+      port: ""
+      auth:
+        username: ""
+        password: ""
+      bypassProxy: ""
+
+request:
+  headers:
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE3NzMyMjAwMDEzMDEsInVzZXJuYW1lIjoicG9rb3ByaW1lIiwiaWF0IjoxNzczMjIwMTQ1LCJleHAiOjE3NzMzMDY1NDV9.fxx9LtnPtVDeu_uJdug_VZgCbstBjcGbB2gsMnUw8dA
+  variables:
+    - name: url
+      value: https://kitek.ktkv.dev/marketplace/
+bundled: false
+extensions:
+  bruno:
+    ignore:
+      - node_modules
+      - .git

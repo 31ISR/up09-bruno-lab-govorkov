@@ -1,0 +1,19 @@
+info:
+  name: Удаление товара
+  type: http
+  seq: 9
+
+http:
+  method: DELETE
+  url: "{{url}}api/items/:id"
+  params:
+    - name: id
+      value: ""
+      type: path
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
